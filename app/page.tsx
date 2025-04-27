@@ -17,7 +17,7 @@ export default function Home() {
       <section id="home" className="flex flex-col items-center justify-center text-center py-20 space-y-6">
         <h1 className="text-4xl md:text-6xl font-bold">Where Ecommerce Meets Automation</h1>
         <p className="text-lg md:text-2xl max-w-2xl">Taigers empowers brands with smarter Amazon operations, SEO strategies, and AI-driven growth.</p>
-        <Button className="text-lg px-6 py-3 mt-4">Get In Touch</Button>
+        <a href="#contact" className="mt-8 underline text-blue-600">Get In Touch</a>
       </section>
 
       {/* About Section */}
