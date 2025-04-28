@@ -15,7 +15,7 @@ export default function Home() {
 
       {/* Navigation Bar */}
       <nav className="flex items-center justify-between p-4 shadow">
-        <div className="text-2xl font-bold">Taigers</div>
+        <div className="text-2xl font-bold text-blue-700">Taigers</div>
         <div className="space-x-6">
           <a href="#home" className="hover:underline">Home</a>
           <a href="#about" className="hover:underline">About</a>
@@ -25,40 +25,54 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative flex flex-col items-center justify-center text-center py-20 space-y-6 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1542744095-291d1f67b221?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80')" }}>
-        <div className="bg-white bg-opacity-70 p-6 rounded-xl">
-          <h1 className="text-4xl md:text-6xl font-bold">Where Ecommerce Growth Meets Intelligence</h1>
-          <p className="text-lg md:text-2xl max-w-2xl">Helping brands grow smarter with full-channel management, performance marketing, and AI-driven optimization.</p>
-          <a href="#contact" className="mt-8 inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Get In Touch</a>
-        </div>
+      <section id="home" className="relative flex flex-col items-center justify-center text-center py-24 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <h1 className="text-4xl md:text-6xl font-bold">Where Ecommerce Growth Meets Intelligence</h1>
+        <p className="text-lg md:text-2xl max-w-2xl mt-6">Helping brands grow smarter with full-channel management, performance marketing, and AI-driven optimization.</p>
+        <a href="#contact" className="mt-8 inline-block bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600">Get In Touch</a>
       </section>
 
       {/* About Section */}
-      <section id="about" className="max-w-6xl mx-auto text-center py-16 space-y-8 px-4">
-        <h2 className="text-3xl font-semibold">About Taigers</h2>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-          <img src="https://images.unsplash.com/photo-1601233746120-6e8d2ca78c90?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="About" className="w-64 h-64 object-cover rounded-2xl shadow-lg" />
-          <p className="text-lg max-w-2xl">
-            At Taigers, we help ecommerce brands grow smarter with full-channel account management, performance marketing, and data-driven optimization strategies.
-            With 10+ years of experience across Amazon, Walmart, Google Ads, Shopify, and DTC platforms, we specialize in connecting marketing execution—like SEO, PPC, and content creation—with strategic automation and growth systems.
-            Our mission is simple: to deliver measurable business impact through agile, scalable, and intelligent ecommerce solutions.
-          </p>
-        </div>
+      <section id="about" className="max-w-6xl mx-auto text-center py-20 px-6">
+        <h2 className="text-3xl font-semibold text-blue-700">About Taigers</h2>
+        <p className="text-lg mt-6 text-gray-700">
+          At Taigers, we help ecommerce brands grow smarter with full-channel account management, performance marketing, and data-driven optimization strategies.
+          With 10+ years of experience across Amazon, Walmart, Google Ads, Shopify, and DTC platforms, we specialize in connecting marketing execution—like SEO, PPC, and content creation—with strategic automation and growth systems.
+          Our mission is simple: to deliver measurable business impact through agile, scalable, and intelligent ecommerce solutions.
+        </p>
       </section>
 
       {/* Services Section */}
-      <section id="services" className="max-w-6xl mx-auto py-16">
-        <h2 className="text-3xl font-semibold text-center mb-12">Our Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Services content ... (omitted for brevity) */}
+      <section id="services" className="max-w-6xl mx-auto py-20">
+        <h2 className="text-3xl font-semibold text-center text-blue-700 mb-12">Our Services</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-6">
+          <div className="p-6 border rounded-xl shadow hover:shadow-lg">
+            <h3 className="text-2xl font-bold mb-2">Full Ecommerce Account Management</h3>
+            <p>Cross-platform account operations for Amazon, Walmart, Shopify, Google Shopping, and more—covering listings, inventory, compliance, and growth management.</p>
+          </div>
+          <div className="p-6 border rounded-xl shadow hover:shadow-lg">
+            <h3 className="text-2xl font-bold mb-2">Listings SEO & Content Optimization</h3>
+            <p>Boost visibility and conversion rates by optimizing titles, descriptions, and keywords across major marketplaces and DTC websites.</p>
+          </div>
+          <div className="p-6 border rounded-xl shadow hover:shadow-lg">
+            <h3 className="text-2xl font-bold mb-2">PPC Advertising Strategy & Management</h3>
+            <p>Custom PPC campaigns with ongoing optimization for Amazon Ads, Google Ads, Facebook Ads—maximizing your ROAS efficiently.</p>
+          </div>
+          <div className="p-6 border rounded-xl shadow hover:shadow-lg">
+            <h3 className="text-2xl font-bold mb-2">Content Design & Creative Production</h3>
+            <p>Professional image design and video production to enhance product branding on Amazon, Google, Shopify, and beyond.</p>
+          </div>
+          <div className="p-6 border rounded-xl shadow hover:shadow-lg">
+            <h3 className="text-2xl font-bold mb-2">Ecommerce Data Reporting & Analytics</h3>
+            <p>Custom automated dashboards (using Tableau, Power BI) to monitor sales, ads, and inventory performance in real-time.</p>
+          </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="max-w-4xl mx-auto text-center py-16 space-y-4">
-        <h2 className="text-3xl font-semibold">Get In Touch</h2>
-        <p>Ready to grow your ecommerce brand? Reach out today and discover how Taigers can help you succeed.</p>
-        <a href="mailto:info@taigers.com" className="inline-block bg-black text-white text-lg px-6 py-3 rounded-full mt-4 hover:bg-gray-800">
+      <section id="contact" className="max-w-4xl mx-auto text-center py-20 px-6">
+        <h2 className="text-3xl font-semibold text-blue-700">Get In Touch</h2>
+        <p className="text-lg text-gray-700">Ready to grow your ecommerce brand? Reach out today and discover how Taigers can help you succeed.</p>
+        <a href="mailto:info@taigers.com" className="mt-6 inline-block bg-orange-500 text-white text-lg px-6 py-3 rounded-full hover:bg-orange-600">
           Email Us
         </a>
       </section>
