@@ -26,8 +26,8 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id="home" className="relative flex flex-col items-center justify-center text-center py-24 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-        <h1 className="text-4xl md:text-6xl font-bold">Where Ecommerce Growth Meets Intelligence</h1>
-        <p className="text-lg md:text-2xl max-w-2xl mt-6">Helping brands grow smarter with full-channel management, performance marketing, and AI-driven optimization.</p>
+        <h1 className="text-4xl md:text-6xl font-bold">Scaling Brands with Intelligence and Performance</h1>
+        <p className="text-lg md:text-2xl max-w-2xl mt-6">Empowering ecommerce brands with full-channel management, marketing optimization, and data-driven strategies for lasting success.</p>
         <a href="#contact" className="mt-8 inline-block bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600">Get In Touch</a>
       </section>
 
