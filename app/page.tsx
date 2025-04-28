@@ -15,7 +15,9 @@ export default function Home() {
 
       {/* Navigation Bar */}
       <nav className="flex items-center justify-between p-4 shadow">
-        <div className="text-2xl font-bold text-[#1F3A93]">Taigers</div>
+        <div className="flex items-center space-x-2">
+          <div className="text-3xl font-extrabold text-[#1F3A93] tracking-wide">Taigers</div>
+        </div>
         <div className="space-x-6">
           <a href="#home" className="hover:underline">Home</a>
           <a href="#about" className="hover:underline">About</a>
@@ -26,7 +28,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id="home" className="relative flex flex-col items-center justify-center text-center py-24 bg-gradient-to-r from-[#1F3A93] to-[#1F3A93] text-white">
-        <h1 className="text-4xl md:text-6xl font-bold">Where Ecommerce Brands Scale Smarter</h1>
+        <h1 className="text-4xl md:text-6xl font-bold">Smarter Growth, Stronger Brands</h1>
         <p className="text-lg md:text-2xl max-w-2xl mt-6">Helping brands grow with full-channel management, performance marketing, and AI-driven optimization.</p>
         <a href="#contact" className="mt-8 inline-block bg-[#FF7A00] text-white font-bold px-6 py-3 rounded-full hover:bg-orange-600">
           Get In Touch
